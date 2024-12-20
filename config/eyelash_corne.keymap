@@ -48,16 +48,36 @@
         tap-ms = <30>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        SelectAll {
+            bindings = <&kp LC(A)>;
+            key-positions = <14 15>;
+        };
+
+        Copy {
+            bindings = <&kp LC(C)>;
+            key-positions = <30 31>;
+        };
+
+        toggleNumpad {
+            bindings = <&tog 3>;
+            key-positions = <8 9 10>;
+            layers = <4>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp ESC         &kp Q  &kp W           &kp E        &kp R             &kp T                               &kp UP                &kp Y        &kp U              &kp I            &kp O              &kp P     &kp BSPC
-&kp TAB         &kp A  &kp S           &kp D        &kp F             &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J              &kp K            &kp L              &kp SEMI  &kp SQT
-&kp UNDERSCORE  &kp Z  &mt LEFT_ALT X  &mt LCTRL C  &mt LEFT_SHIFT V  &kp B        &kp SPACE              &kp DOWN              &kp N        &mt RIGHT_SHIFT M  &mt RCTRL COMMA  &mt RIGHT_ALT DOT  &kp FSLH  &kp MINUS
-                                       &kp LGUI     &mo 1             &lt 3 SPACE                                               &lt 3 ENTER  &lt 2 BACKSPACE    &lt 4 DELETE
+&kp ESC         &kp Q  &kp W           &kp E           &kp R             &kp T                                &kp UP                      &kp Y        &kp U              &kp I            &kp O              &kp P     &kp BACKSLASH
+&kp TAB         &kp A  &kp S           &kp D           &kp F             &kp G                      &kp LEFT  &kp PRINTSCREEN  &kp RIGHT  &kp H        &kp J              &kp K            &kp L              &kp SEMI  &kp SQT
+&kp UNDERSCORE  &kp Z  &mt LEFT_ALT X  &mt LCTRL C     &mt LEFT_SHIFT V  &kp B        &kp K_MUTE              &kp DOWN                    &kp N        &mt RIGHT_SHIFT M  &mt RCTRL COMMA  &mt RIGHT_ALT DOT  &kp FSLH  &kp MINUS
+                                       &lt 5 LEFT_WIN  &lt 1 CLCK        &lt 3 SPACE                                                      &lt 3 ENTER  &lt 2 BACKSPACE    &lt 4 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -66,10 +86,10 @@
         lower_layer {
             display-name = "NUMBER";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
+&kp GRAVE  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp EQUAL
+&trans     &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&trans     &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+                                            &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -84,10 +104,10 @@
                                     &trans     &trans     &kp SPACE                                                             &kp RET    &trans     &trans
             >;
 
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
         };
 
-        layer_3 {
+        FN {
             display-name = "Fn";
             bindings = <
 &studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                  &mmv MOVE_UP                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
@@ -105,6 +125,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+        };
+
+        MISC {
+            bindings = <
+&bt BT_CLR_ALL   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 4  &trans                    &trans          &trans  &trans  &trans  &trans           &trans           &trans
+&rgb_ug RGB_EFF  &trans        &trans        &trans        &trans        &trans            &trans  &trans  &trans  &trans  &trans  &trans  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI
+&rgb_ug RGB_TOG  &out OUT_TOG  &trans        &trans        &trans        &trans  &trans            &trans          &trans  &trans  &trans  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD
+                                             &trans        &trans        &trans                                    &trans  &trans  &trans
             >;
         };
     };

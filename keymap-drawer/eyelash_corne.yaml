@@ -303,3 +303,5 @@ combos:
   l: [numpad]
 - p: [23, 24]
   k: $$mdi:keyboard-esc$$
+- p: [33, 36]
+  k: {t: QWERTY, h: toggle}

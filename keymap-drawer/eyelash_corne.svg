@@ -588,6 +588,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
+<g class="combo combopos-3">
+<path d="M490,153 l-163,0" class="combo"/>
+<path d="M490,153 l163,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="140" width="28" height="26" class="combo"/>
+<a href="#QWERTY">
+<text x="490" y="153" class="combo tap layer-activator">QWERTY</text>
+</a><text x="490" y="164" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 318)" class="layer-NUMBER">
@@ -869,6 +877,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
+<g class="combo combopos-3">
+<path d="M490,153 l-163,0" class="combo"/>
+<path d="M490,153 l163,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="140" width="28" height="26" class="combo"/>
+<a href="#QWERTY">
+<text x="490" y="153" class="combo tap layer-activator">QWERTY</text>
+</a><text x="490" y="164" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 637)" class="layer-SYMBOL">
@@ -1142,6 +1158,14 @@ rect.held, rect.combo.held {
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
+</g>
+<g class="combo combopos-3">
+<path d="M490,153 l-163,0" class="combo"/>
+<path d="M490,153 l163,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="140" width="28" height="26" class="combo"/>
+<a href="#QWERTY">
+<text x="490" y="153" class="combo tap layer-activator">QWERTY</text>
+</a><text x="490" y="164" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1443,6 +1467,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
+<g class="combo combopos-4">
+<path d="M490,153 l-163,0" class="combo"/>
+<path d="M490,153 l163,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="140" width="28" height="26" class="combo"/>
+<a href="#QWERTY">
+<text x="490" y="153" class="combo tap layer-activator">QWERTY</text>
+</a><text x="490" y="164" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1274)" class="layer-Fn">
@@ -1735,6 +1767,14 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
 </g>
+<g class="combo combopos-3">
+<path d="M490,153 l-163,0" class="combo"/>
+<path d="M490,153 l163,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="140" width="28" height="26" class="combo"/>
+<a href="#QWERTY">
+<text x="490" y="153" class="combo tap layer-activator">QWERTY</text>
+</a><text x="490" y="164" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1592)" class="layer-MISC">
@@ -1994,6 +2034,14 @@ rect.held, rect.combo.held {
 <g class="combo combopos-2">
 <rect rx="6" ry="6" x="742" y="74" width="28" height="26" class="combo"/>
 <use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="747" y="78" height="18" width="18.0" class="combo tap glyph mdi:keyboard-esc"/>
+</g>
+<g class="combo combopos-3">
+<path d="M490,153 l-163,0" class="combo"/>
+<path d="M490,153 l163,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="140" width="28" height="26" class="combo"/>
+<a href="#QWERTY">
+<text x="490" y="153" class="combo tap layer-activator">QWERTY</text>
+</a><text x="490" y="164" class="combo hold">toggle</text>
 </g>
 </g>
 </g>

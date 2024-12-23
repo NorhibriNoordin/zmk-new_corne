@@ -85,6 +85,11 @@
             bindings = <&kp ESCAPE>;
             key-positions = <23 24>;
         };
+
+        backDefault {
+            bindings = <&to 0>;
+            key-positions = <33 36>;
+        };
     };
 
     keymap {
@@ -131,7 +136,7 @@
 &kp K_POWER  &kp F1  &kp F2      &kp F3                  &kp F4              &kp F5                           &kp UP_ARROW               &kp LEFT_PARENTHESIS   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &trans     &kp EQUAL
 &trans       &kp F6  &kp F7      &kp F8                  &kp F9              &kp F10                &kp LEFT  &kp KP_NUMLOCK  &kp RIGHT  &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTRK  &kp PLUS
 &trans       &trans  &kp INSERT  &mt LCTRL C_MENU_RIGHT  &mt LEFT_SHIFT F11  &kp F12  &kp K_MUTE              &kp DOWN_ARROW             &kp KP_NUMBER_0        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp SLASH  &kp MINUS
-                                 &trans                  &tog 0              &trans                                                      &kp ENTER              &kp BACKSPACE    &kp PERIOD
+                                 &trans                  &to 0               &trans                                                      &kp ENTER              &kp BACKSPACE    &kp PERIOD
             >;
         };
 
